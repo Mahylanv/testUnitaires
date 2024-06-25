@@ -47,7 +47,6 @@ class GestionDestinationTest extends TestCase
     {
         global $pdo;
 
-        // Insérer une destination pour tester la suppression
         $pdo->exec("INSERT INTO destination (titre, img1, img2, img3, description1, description2, map) VALUES ('Test Destination', 'img1.jpg', 'img2.jpg', 'img3.jpg', 'Description 1', 'Description 2', 'la')");
         $id_destination = $pdo->lastInsertId();
 

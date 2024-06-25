@@ -29,7 +29,7 @@ class UserTests extends TestCase
     {
         $pseudo = 'testuser';
         $email = 'testuser@test.com';
-        $mdp = 'pwd';
+        $mdp = 'mdp';
 
         $erreur = registerUser($this->pdo, $pseudo, $email, $mdp);
 

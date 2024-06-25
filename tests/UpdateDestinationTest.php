@@ -22,7 +22,6 @@ class UpdateDestinationTest extends TestCase
 
         $pdo->exec("INSERT INTO destination (titre, img1, img2, img3, description1, description2, map) VALUES ('Test Destination', 'img1.jpg', 'img2.jpg', 'img3.jpg', 'Description 1', 'Description 2', 'ici')");
         $id_destination = $pdo->lastInsertId();
-
         $pdo->exec("INSERT INTO relation_continent_destination (id_destination, id_continent) VALUES ($id_destination, 1)");
 
         $_GET['id_destination'] = $id_destination;
@@ -36,7 +35,6 @@ class UpdateDestinationTest extends TestCase
 
         update_destination($newTitre, $newImg1, $newImg2, $newImg3, $newDescription1, $newDescription2, $newMap);
 
-        // Vérifier la mise à jour
         $result = $pdo->query("SELECT * FROM destination WHERE id_destination = $id_destination")->fetch(PDO::FETCH_ASSOC);
 
         $this->assertEquals($newTitre, $result['titre']);

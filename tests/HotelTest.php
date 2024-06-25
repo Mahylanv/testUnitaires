@@ -27,7 +27,6 @@ class HotelTest extends TestCase
         $map = 'ici';
 
         create_post($titre, $img1, $img2, $img3, $description1, $description2, $map);
-
         $result = $pdo->query("SELECT * FROM hotel WHERE titre = 'Test Hotel'")->fetch(PDO::FETCH_ASSOC);
 
         $this->assertNotEmpty($result);
