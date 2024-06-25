@@ -1,0 +1,46 @@
+.profil-page{
+    text-align: center;
+    color: black;
+    font-family: sans-serif;
+    fill: white;
+    margin-bottom: 100px;
+}
+
+
+.P1{
+    margin: 50px 0 300px 0;
+}
+
+.P1 .pp{
+    font-size: 50px;
+}
+
+.P1 h2 {
+    margin: 20px auto;
+}
+
+.P1 svg{
+    width: 7rem;
+    height: 7rem;
+    overflow: hidden;
+    padding: 15px;
+    background-color: grey;
+    border-radius: 70px;
+}
+
+.P2 a{
+    color: black;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.P2 .delete{
+    color: red;
+}
+
+.P2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+}
